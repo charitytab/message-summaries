@@ -34,11 +34,22 @@ header.brand img.logo {
   height: auto;
   margin: 0 auto;
 }
+.minister-portrait {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
 h1.sermon-title {
   font-size: 1.75rem;
   line-height: 1.25;
   margin: 6px 0 12px;
   color: var(--ink);
+  text-align: center;
 }
 .meta {
   font-size: 0.95rem;

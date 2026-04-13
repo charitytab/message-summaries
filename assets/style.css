@@ -1,0 +1,97 @@
+/* Charity Tabernacle Sermon Summary styling */
+:root {
+  --ink: #1a1a1a;
+  --muted: #5a5a5a;
+  --accent: #6b3f1d;
+  --bg: #fdfbf7;
+  --line: #e3dccf;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--bg);
+}
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+header.brand {
+  background: #0e0e0e;
+  border-radius: 6px;
+  padding: 18px 20px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+header.brand img.logo {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin: 0 auto;
+}
+h1.sermon-title {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin: 6px 0 12px;
+  color: var(--ink);
+}
+.meta {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 28px;
+  border-left: 3px solid var(--accent);
+  padding: 4px 0 4px 14px;
+}
+.meta div { margin: 2px 0; }
+h2 {
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 28px 0 10px;
+}
+p, ul { margin: 0 0 14px; }
+ul { padding-left: 22px; }
+li { margin-bottom: 8px; }
+blockquote {
+  border-left: 3px solid var(--line);
+  margin: 14px 0;
+  padding: 4px 0 4px 16px;
+  color: var(--muted);
+  font-style: italic;
+}
+.refs {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+footer.links {
+  margin-top: 36px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 0.95rem;
+}
+footer.links a {
+  display: inline-block;
+  margin-right: 14px;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+}
+footer.links a:hover { opacity: 0.7; }
+.disclaimer {
+  margin-top: 24px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.45;
+}
+@media (max-width: 600px) {
+  .container { padding: 20px 16px 48px; }
+  h1.sermon-title { font-size: 1.4rem; }
+}
